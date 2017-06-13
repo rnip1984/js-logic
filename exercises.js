@@ -168,8 +168,15 @@ console.log(notEqual(1,1));
  * The function will return true if the number passed into the function is greater than 100, otherwise it will return false.
  * Console.log your result.
 */ 
-
-
+function spareChange(money){
+  if(money>100){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log("#8:",spareChange(101));
+console.log("#8:",spareChange(100));
 
 /*
  * #9
@@ -184,8 +191,15 @@ console.log(notEqual(1,1));
  * The function will return true if the sum of all the number values is greater than 30, otherwise it will return false.
  * Console.log your result.
 */ 
-
-
+function dirty30(one,two,three){
+  if(one+two+three>30){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log("#9:",dirty30(1,3,28));
+console.log("#9:",dirty30(1,3,26));
 
 /*
  * #10
@@ -198,7 +212,9 @@ console.log(notEqual(1,1));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-
+// function evenStevens(num){
+//   if(num)
+// }
 
 
 
@@ -214,8 +230,15 @@ console.log(notEqual(1,1));
  * If BOTH values are 21 or over, the function will return the message: "Welcome to the Legends Lounge." Otherwise, it will return the message: "Chuck E Cheese is across the street."
  * Console.log your result.
 */ 
-
-
+function daClub(cover,age){
+  if(cover && age >=21){
+  return "Welcome to the Legends Lounge.";
+  }else{
+  return "Chuck E Cheese is across the street.";
+  }
+}
+console.log("#11:", daClub(21,21));
+console.log("#11:", daClub(10,21));//QUESTION!!!!!!!!!!!!
 /*
  * #12
  * Function - graduation
@@ -228,8 +251,16 @@ console.log(notEqual(1,1));
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
-
-
+function graduation (credits,thesis){
+  if(credits>=120 || thesis===true){
+    return "Congratulations on a job well done."
+  }else{
+    return "See you in summer school."
+  }
+}
+console.log("#12:",graduation(100,true));
+console.log("#12:",graduation(120,false));
+console.log("#12:",graduation(119,false));
 
 /*
  * #13
@@ -242,8 +273,21 @@ console.log(notEqual(1,1));
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
-
-
+function moneyTrain(speed){
+  if(speed<50){
+    return "You are riding Honolulu's Rail."
+  }else{
+    if(speed<100){
+    return "You are riding an Amtrak."
+  }
+    if(speed>=100){
+    return "Now you balling in the Shinkansen!"
+  }
+}
+}
+console.log("#13:",moneyTrain(49));
+console.log("#13:",moneyTrain(69));
+console.log("#13:",moneyTrain(101));
 /*
  * #14
  * Function - buyDoughnut
@@ -258,8 +302,13 @@ console.log(notEqual(1,1));
  * Console.log budget and doughnutBought again.
 */ 
 
-
-
+function buyDoughnut(){
+  var budget=21;
+  var doughnutPrice=5;
+  var doughnutBought=0;
+  return var budget=budget-doughnutPrice && var doughnutBought =doughnutBought + 1
+}
+console.log("#14:",buyDoughnut())
 
 
 /*
