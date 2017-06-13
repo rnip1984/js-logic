@@ -28,8 +28,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
-
-
+function canVote(age){//why don't we need to enclose age in quotes?
+if(age>=18){
+  return true; 
+}else{
+  return false;
+}
+}
+console.log(canVote(21))
 /*
  * #2
  * Function - login
@@ -41,8 +47,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return the message: "Login Success!", if the string passed into the function is "test1234"
  * Console.log your result.
 */
-
-
+function login(password){
+  if(password==='test1234'){
+    return 'Login Success!';
+  }else{
+    return 'Try Again, buddy.'
+  }  
+  } //why do the end curly brackets always appear on the left?
+console.log(login('test1234'))
 /*
  * #3
  * Function - isGreaterThan
@@ -55,8 +67,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the first number is greater than the second.
  * Console.log your result.
 */
-
-
+function isGreaterThan(first,second){
+  if(first>second){
+    return true;
+  }else{
+    return false;
+  }  
+  }
+console.log(isGreaterThan(3,1))
 
 /*
  * #4
@@ -69,8 +87,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the value passed into the function is "true".
  * Console.log your result.
 */
-
-
+function mustBeTrue(boo){
+  if(boo===true){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log("#4:",mustBeTrue(true));
 
 /*
  * #5
@@ -83,9 +107,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
-
-
+function bigBird(word){
+  if(word.length===3){
+    return "Word to Big Bird!"
+  }else{
+    return "Word to Oscar the Grouch!"
+  }
+}
+console.log("#5:",bigBird("can"));
+console.log(bigBird(12));
 /*
  * #6
  * Function - isEqual
@@ -98,8 +128,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * If the strings are equal, the function will return the message "You look mahvelous!" Otherwise, return the message: "I don't know who you are anymore." 
  * Console.log your result.
 */
-
-
+function isEqual(first, second){
+  if(first===second){
+    return "You look mahvelous!";
+  }else{
+    return "I don't know who you are anymore.";
+  }
+}
+console.log("#6:",isEqual('cavs','cavs'));
 /*
  * #7
  * Function - notEqual
@@ -112,8 +148,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * If the strings are not equal, the function will return the message "Opposites do attract." Otherwise, return the message: "Cause it's like you're my mirror." 
  * Console.log your result.
 */
-
-
+function notEqual(first, second){
+  if(first!==second){
+    return "Opposites do attract.";
+  }else{
+    return "Cause it's like you're my mirror."
+  }
+}//how do you set the parameters to be strings vs. #s?
+console.log("#7:",notEqual("Tom","Jerry"));
+console.log(notEqual(1,1));
 /*
  * #8
  * Function - spareChange
