@@ -28,14 +28,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
-function canVote(age){//why don't we need to enclose age in quotes?
-if(age>=18){
-  return true; 
-}else{
-  return false;
+function canVote(age){
+  if(age>=18){
+   return true; 
+ }else{
+   return false;
 }
 }
-console.log(canVote(21))
+console.log(canVote(21));
 /*
  * #2
  * Function - login
@@ -51,10 +51,10 @@ function login(password){
   if(password==='test1234'){
     return 'Login Success!';
   }else{
-    return 'Try Again, buddy.'
+    return 'Try Again, buddy.';
   }  
-  } //why do the end curly brackets always appear on the left?
-console.log(login('test1234'))
+  } 
+console.log(login('test1234'));
 /*
  * #3
  * Function - isGreaterThan
@@ -74,7 +74,7 @@ function isGreaterThan(first,second){
     return false;
   }  
   }
-console.log(isGreaterThan(3,1))
+console.log(isGreaterThan(3,1));
 
 /*
  * #4
@@ -109,9 +109,9 @@ console.log("#4:",mustBeTrue(true));
 */
 function bigBird(word){
   if(word.length===3){
-    return "Word to Big Bird!"
+    return "Word to Big Bird!";
   }else{
-    return "Word to Oscar the Grouch!"
+    return "Word to Oscar the Grouch!";
   }
 }
 console.log("#5:",bigBird("can"));
@@ -152,7 +152,7 @@ function notEqual(first, second){
   if(first!==second){
     return "Opposites do attract.";
   }else{
-    return "Cause it's like you're my mirror."
+    return "Cause it's like you're my mirror.";
   }
 }//how do you set the parameters to be strings vs. #s?
 console.log("#7:",notEqual("Tom","Jerry"));
@@ -212,10 +212,15 @@ console.log("#9:",dirty30(1,3,26));
  * The function will return true if the number passed in is an even integer, otherwise it will return false.
  * Console.log your result.
 */ 
-// function evenStevens(num){
-//   if(num)
-// }
-
+ function evenStevens(num){
+   if(num%2===0){
+     return true;
+   }else{
+     return false;
+   }
+}
+console.log("#10:",evenStevens(7));
+console.log("#10:",evenStevens(6));
 
 
 /*
@@ -232,9 +237,9 @@ console.log("#9:",dirty30(1,3,26));
 */ 
 function daClub(cover,age){
   if(cover && age >=21){
-  return "Welcome to the Legends Lounge.";
+    return "Welcome to the Legends Lounge.";
   }else{
-  return "Chuck E Cheese is across the street.";
+    return "Chuck E Cheese is across the street.";
   }
 }
 console.log("#11:", daClub(21,21));
@@ -253,9 +258,9 @@ console.log("#11:", daClub(10,21));//QUESTION!!!!!!!!!!!!
 */ 
 function graduation (credits,thesis){
   if(credits>=120 || thesis===true){
-    return "Congratulations on a job well done."
+    return "Congratulations on a job well done.";
   }else{
-    return "See you in summer school."
+    return "See you in summer school.";
   }
 }
 console.log("#12:",graduation(100,true));
@@ -275,13 +280,13 @@ console.log("#12:",graduation(119,false));
 */ 
 function moneyTrain(speed){
   if(speed<50){
-    return "You are riding Honolulu's Rail."
+    return "You are riding Honolulu's Rail.";
   }else{
     if(speed<100){
-    return "You are riding an Amtrak."
+    return "You are riding an Amtrak.";
   }
     if(speed>=100){
-    return "Now you balling in the Shinkansen!"
+    return "Now you balling in the Shinkansen!";
   }
 }
 }
@@ -302,13 +307,13 @@ console.log("#13:",moneyTrain(101));
  * Console.log budget and doughnutBought again.
 */ 
 
-function buyDoughnut(){
-  var budget=21;
-  var doughnutPrice=5;
-  var doughnutBought=0;
-  return var budget=budget-doughnutPrice && var doughnutBought =doughnutBought + 1
-}
-console.log("#14:",buyDoughnut())
+// function buyDoughnut(){
+//   var budget=21;
+//   var doughnutPrice=5;
+//   var doughnutBought=0;
+//   return var budget=budget-doughnutPrice && var doughnutBought =doughnutBought + 1
+// }
+// console.log("#14:",buyDoughnut())
 
 
 /*
@@ -337,7 +342,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 4"
  * "Player: 5"
 */
-
+for(var i =1; i<6; i++){
+  console.log("Player:",i);
+}
 
 /* 
  * #16
@@ -345,7 +352,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
-
+for(var i =0;i<myFavFoods.length;i++){
+  console.log(myFavFoods[i]);
+}
 /*
  * #17
  * Function - sumItUp
